@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalash's Academic Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-size: 1.2rem;
+            color: #333;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+        }
+
+        .projects {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+        }
+
+        .project h2 {
+            font-size: 1.8rem;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kalash's Academic Projects</h1>
+    </header>
+    
+    <nav>
+        <a href="#ai-chatbot">AI-Driven Agriculture Chatbot</a>
+        <a href="#fuel-calculator">Fuel Consumption Calculator</a>
+        <a href="#software-testing">Software Testing</a>
+        <a href="#affiliate-marketing">Affiliate Marketing Website</a>
+        <a href="#client-app">Live Client App</a>
+    </nav>
+
+    <section class="projects">
+        <div class="project" id="ai-chatbot">
+            <h2>AI-Driven Agriculture Chatbot</h2>
+            <p>Developed an AI-powered chatbot for agriculture in Maharashtra, providing information on soil quality, weather, crops, costs, irrigation methods, pests, and fertilizers for seven districts. The chatbot supports multi-language translation (Hindi/Marathi) and text-to-speech functionality to enhance user accessibility and interaction.</p>
+        </div>
+
+        <div class="project" id="fuel-calculator">
+            <h2>Fuel Consumption and Depreciation Calculator</h2>
+            <p>Developed a web service to calculate fuel consumption for cars and bikes based on user input, providing real-time estimates for fuel usage and vehicle depreciation. Implemented backend functionality using MySQL and NetBeans to store and process data for accurate results.</p>
+        </div>
+
+        <div class="project" id="software-testing">
+            <h2>Software Testing and Quality Assurance</h2>
+            <p>Created a gym website and performed manual testing using Selenium, along with code testing using Java. This project focused on ensuring the quality and functionality of the website through different testing methodologies.</p>
+        </div>
+
+        <div class="project" id="affiliate-marketing">
+            <h2>WordPress-based Affiliate Marketing Website</h2>
+            <p>Developed a website, "Dream Decor," for affiliate marketing, where I sell products through affiliate links. The website is hosted on InfinityFree and focuses on home decor products, earning commissions from sales through affiliate links.</p>
+        </div>
+
+        <div class="project" id="client-app">
+            <h2>Ongoing Live Project: Client App Development</h2>
+            <p>I am currently working on an app for a client, and I will provide further details about the app once it's ready for release.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kalash. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Optional: You can add interactive features here if needed
+        const links = document.querySelectorAll('nav a');
+        
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
